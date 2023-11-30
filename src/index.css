@@ -109,8 +109,10 @@ button {
 	--angle: 90deg;
 	--gradX: 100%;
 	--gradY: 50%;
-	--c1: rgb(252, 132, 132);
-	--c2: rgba(140, 170, 182, 0.1);
+	--c1: #f71313;
+	--c2: rgba(34, 33, 35, 0.784);
+
+	--c3: rgba(8, 175, 240, 0.1);
 }
 
 .wrapper {
@@ -120,16 +122,16 @@ button {
 
 .box {
 	/* font-size: 3vw; */
-	margin: max(2rem, 1vw);
+	margin: max(0rem, 0vw);
 	border: 1.35rem solid;
 	padding: 3vw;
   border-radius: 10px;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c2) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
 }
 
 .box:nth-child(2) {
-	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c3) 40%) 30;
 	animation: borderRadial var(--d) linear infinite forwards;
   border-radius: 10px;
 }

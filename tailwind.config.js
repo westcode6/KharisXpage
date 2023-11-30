@@ -12,10 +12,16 @@ module.exports = {
       screens: {
         xs: "450px",
       },
+      colors: {
+        "priRed": "#D01418",
+          "secRed": "#E3CCAB",
+        
+      },
       background: {
           "dark": "#222327",
           "darker": "#171717",
           "darkest": "#222222",
+          
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/heroMain.jpg')",
