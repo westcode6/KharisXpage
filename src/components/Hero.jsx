@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideIn, textVariant } from "../utils/motion";
 import { profileLinks } from "../constants";
-import { mann } from "../assets";
 import { styles } from "../styles";
 
 const Hero = () => {
