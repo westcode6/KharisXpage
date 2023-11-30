@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 // import all of our components from  the components folder
 import {
 
-  Hero,
+  Hero, Navbar,
 
 } from "./components";
 const App = () => {
@@ -13,9 +13,8 @@ const App = () => {
       <BrowserRouter>
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
-
-            <div className="w-full bg-hero-img">
-
+            <div>
+              <Navbar />
               <Hero />
               {/* <StarsCanvas /> */}
             </div>

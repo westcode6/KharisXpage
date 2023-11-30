@@ -1,22 +1,23 @@
-import {
-
-  } from "../assets";
-  
 
   export const navLinks = [
   
     {
+      id: "home",
+      title: "HOME",
+    },
+    
+    {
       id: "about",
-      title: "About me",
+      title: "ABOUT",
     },
     {
       id: "project",
-      title: "Projects",
+      title: "PROJECTS",
     },
 
     {
-      id: "Experience",
-      title: "Experience",
+      id: "contact",
+      title: "CONTACT",
     },
   ];
 
@@ -45,22 +46,22 @@ import {
   const services = [
     {
       title: "UX & UI",
-      icon: web,
+      icon: "kk",
       desc: "Desiging user interfaces that are intuitive, efficient, and enjoyable to use",
     },
     {
       title: "Web & Mobile App",
-      icon: responsive,
+      icon: "kkt",
       desc: "Transforming ideas  into exceptional web and mobile app experience",
     },
     {
       title: "Design & Creative",
-      icon: mobile,
+      icon: "kkred",
       desc: "Crafting visually stunning designs that connect with your audience.",
     },
     {
       title: "Development",
-      icon: contentCreator,
+      icon: "wer",
       desc: "Bringing your vision to life with the latest technology and design trends",
     },
   ];
@@ -68,60 +69,20 @@ import {
   const technologies = [
     {
       name: "HTML 5",
-      icon: html,
+      icon: "html graphists",
     },
     {
       name: "CSS 3",
-      icon: css,
+      icon: "css graphis",
     },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "SvelteJS",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Vite JS",
-      icon: nodejs,
-    },
- 
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    // {
-    //   name: "docker",
-    //   icon: docker,
-    // },
+
   ];
   
   const experiences = [
     {
       title: "FrontLead Developer",
       company_name: "Goviral Inc",
-      icon: starbucks,
+   
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
@@ -134,7 +95,6 @@ import {
     {
       title: "Junior Developer",
       company_name: "Whoscore",
-      icon: tesla,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
@@ -147,7 +107,6 @@ import {
     {
       title: "Web Developer",
       company_name: "Gopluva",
-      icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2020 - Jan 2023",
       points: [
@@ -160,7 +119,6 @@ import {
     {
       title: "Team Lead Frontend",
       company_name: "Kokolity",
-      icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Present",
       points: [
@@ -179,7 +137,6 @@ import {
       name: "Jake Athersmith",
       designation: "CFO",
       company: "Acme Co",
-      image: {sellz},
     },
     {
       testimonial:
@@ -187,7 +144,6 @@ import {
       name: "Andrew Smith",
       designation: "Cake Figures",
       company: "CakeFigures.com",
-      image: {kidbro}
     },
     {
       testimonial:
@@ -218,7 +174,6 @@ import {
           color: "pinky",
         },
       ],
-      image: whoscore,
       source_code_link: "https://test-whoscore-v2.vercel.app/home",
     },
     {
@@ -239,7 +194,6 @@ import {
           color: "pinky",
         },
       ],
-      image: carrent,
       source_code_link: "https://github.com/",
     },
     {
@@ -260,7 +214,6 @@ import {
           color: "pinky",
         },
       ],
-      image: jobit,
       source_code_link: "https://ko-kolity-funds.vercel.app/",
     },
     {
@@ -281,7 +234,6 @@ import {
           color: "pinky",
         },
       ],
-      image: tripguide,
       source_code_link: "https://github.com/",
     },
   ];
