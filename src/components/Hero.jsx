@@ -6,7 +6,6 @@ import { profileLinks } from "../constants";
 import { styles } from "../styles";
 
 const Hero = () => {
-  const myProfile = mann;
   return (
     <>
       {/* <StarsCanvas /> */}
