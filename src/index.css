@@ -46,10 +46,10 @@ button {
 /* THE CUSTOMS STYLES */
 
 .bg-hero-img {
-  background-image: url(/src/assets/black-pattern1.jpg) !important;
+  /* background-image: url(/src/assets/black-pattern1.jpg) !important;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .custom-btn {
