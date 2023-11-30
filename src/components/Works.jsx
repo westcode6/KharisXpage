@@ -4,7 +4,6 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { github } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
@@ -37,7 +36,7 @@ const ProjectCard = ({
                 window.open(source_code_link)
               }}
               >
-                <img src={github} alt="github" className="w-6 h-6 object-contain" />
+                <img src="" alt="github" className="w-6 h-6 object-contain" />
               </div>
             </div>
           </div>
