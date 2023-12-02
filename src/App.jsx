@@ -7,15 +7,18 @@ import {
   Hero, Navbar,
 
 } from "./components";
+import About from "./components/About";
 const App = () => {
   return (
     <>
       <BrowserRouter>
+      <Navbar />
+
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
             <div>
-              <Navbar />
               <Hero />
+              <About />
               {/* <StarsCanvas /> */}
             </div>
         

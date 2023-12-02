@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { SectionWrapper } from "../hoc";
-
+import { kCool } from "../assets/projects";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  const logo = "./src/assets/projects/k-cool.webp"
+  const logo = kCool
   return (
-    <nav className={`p-${styles.paddingX} fixed top-0 bg-dark py-3 w-full  shadow-2xl z-20`}>
-      <div className="w-full bg-darker max-w-7xl mx-auto flex items-center justify-between">
+    <nav className={`p-${styles.paddingX} fixed top-0 bg-red-600 py-2 w-full z-10`}>
+      <div className="w-full glass-effect max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
             to="/"
@@ -23,9 +22,9 @@ const Navbar = () => {
           >
            {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
 
-           <img src={logo} alt="logoo" className="w-12 h-12 md:w-14 md:h-14 object-cover" />
+           <img src={logo} alt="logoo" className="w-8 h-8 md:w-10 md:h-10 object-cover" />
 
-           <h4 className="text-3xl text-secRed font-black tracking-wide">haris</h4>
+           <h4 className="text-xl text-secRed font-black tracking-wide">haris</h4>
           </Link>
         </div>
 
@@ -35,7 +34,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`
-            "px-4 py-2 rounded-xl hover:underline hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-base  font-semibold cursor-pointer`}
+            "px-4 py-2 rounded-xl glass-effect hover:shadow-inner text-xs  font-medium text-orange-200 hover:font-black  cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
@@ -43,7 +42,7 @@ const Navbar = () => {
 
                 <a
                   href={`#${link.id}`}
-                  className="cursor-pointer p-1 rounded-2xl font-medium text-sm text-neutral-500"
+                  className="cursor-pointer p-1 rounded-2xl  font-mono  font-semibold"
                 >
                   {link.title}
                   <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-70 animate-ping"></span>
@@ -51,7 +50,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block uppercase px-4 py-2 bg-priRed hover:bg-secRed transform transition hover:-translate-x-0.5 ease-in duration-300 font-bold text-white text-sm hover:text-red-500 rounded-xl shadow-xl">
+          <button className="hidden sm:block uppercase px-4 py-2 border border-orange-400 bg-orange-50 transform transition hover:-translate-y-1 ease-in duration-100 font-bold text-red-500 text-sm hover:text-red-500 rounded-xl shadow-xl">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
@@ -60,7 +59,7 @@ const Navbar = () => {
               <span className="text-xl">
                 <i className="fa fa-glass  mr-1 " aria-hidden="true"></i>
               </span>
-           HIRE ME
+        TRY ME
             </a>
           </button>
         </div>
