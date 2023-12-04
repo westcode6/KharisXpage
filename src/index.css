@@ -43,6 +43,10 @@ button {
   font-weight: normal normal;
 }
 
+img {
+  width: 100% !important;
+}
+
 /* THE CUSTOMS STYLES */
 
 .hero-banner {
@@ -70,10 +74,8 @@ button {
 }
 
 .branded {
-
   background: #edde5d;
   background: -webkit-linear-gradient(44deg, #edde5d 0%, #f09819 100%);
-
 
   -webkit-backdrop-filter: blur(48px);
 
@@ -81,86 +83,132 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+/* GRADient TEXT */
+.text-gray-gradient {
+  background: #fffdfd;
+  background: linear-gradient(to right, #999898 20%, #fc4a4a 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+}
+
+/* TEXT ANIMATION */
+
+.svg{
+	font-family: "Russo One", sans-serif;
+	width: 30%; height: 50%;
+}
+.svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #DE1A02;
+	font-size: 24px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(240,2,26,0); stroke: rgba(222,26,2,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(240,2,26,0); stroke: rgba(222,26,2,1); }
+	80%  {fill: rgba(240,2,26,0); stroke: rgba(222,26,2,1); stroke-width: 3; }
+	100% {
+		fill: rgba(240,2,26,1); stroke: rgba(222,26,2,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
 
 /* Border effect */
 
-
-
 @property --angle {
-  syntax: '<angle>';
+  syntax: "<angle>";
   initial-value: 90deg;
   inherits: true;
 }
 
 @property --gradX {
-  syntax: '<percentage>';
+  syntax: "<percentage>";
   initial-value: 50%;
   inherits: true;
 }
 
 @property --gradY {
-  syntax: '<percentage>';
+  syntax: "<percentage>";
   initial-value: 0%;
   inherits: true;
 }
 
 :root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: #f71313;
-	--c2: rgba(34, 33, 35, 0.784);
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: #f71313;
+  --c2: rgba(34, 33, 35, 0.784);
 
-	--c3: rgba(8, 175, 240, 0.1);
+  --c3: rgba(8, 175, 240, 0.1);
 }
 
 .wrapper {
-	min-width: min(40rem, 100%);
+  min-width: min(40rem, 100%);
   border-radius: 10px;
 }
 
 .box {
-	/* font-size: 3vw; */
-	margin: max(0rem, 0vw);
-	border: 1.35rem solid;
-	padding: 3vw;
+  /* font-size: 3vw; */
+  margin: max(0rem, 0vw);
+  border: 1rem solid;
+  padding: 3vw;
   border-radius: 10px;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c2) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c2) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
 
 .box:nth-child(2) {
-	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c3) 40%) 30;
-	animation: borderRadial var(--d) linear infinite forwards;
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c3) 40%
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
   border-radius: 10px;
 }
 
 @keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
+  100% {
+    --angle: 420deg;
+  }
 }
 
 @keyframes borderRadial {
-	20% {
-		--gradX: 100%;
-		--gradY: 50%;
-	}
-	40% {
-		--gradX: 100%;
-		--gradY: 100%;
-	}
-	60% {
-		--gradX: 50%;
-		--gradY: 100%;
-	}
-	80% {
-		--gradX: 0%;
-		--gradY: 50%;
-	}
-	100% {
-		--gradX: 50%;
-		--gradY: 0%;
-	}
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
 }

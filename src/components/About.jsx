@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { slideIn, fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import Experience from "./Experience";
 // Create The Service Card Component to render our services
 export const ServiceCard = ({ index, title, icon, desc }) => {
 
@@ -22,15 +23,15 @@ export const ServiceCard = ({ index, title, icon, desc }) => {
             scale: 1,
             speed: 450,
           }}
-          className="w-full  shadow-xl border border-neutral-800 px-6 py-10 rounded-2xl flex flex-col  items-center justify-center gap-2"
+          className="w-full  shadow-xl border border-neutral-800 px-6 py-10 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"
         >
           <img
             src={icon}
             alt={title}
             className="w-16 h-16 object-contain object-center"
           />
-          <h4 className="text-white text-base font-normal mt-2">{title}</h4>
-          <p className="mt-2 text-base text-neutral-400">{desc}</p>
+          <h4 className="text-gray-gradient text-base font-normal mt-2">{title}</h4>
+          <p className="mt-2 text-base tracking-tight text-neutral-400/60">{desc}</p>
         </div>
       </motion.div>
     </Tilt>
@@ -43,10 +44,10 @@ const About = () => {
     <>
       <div
         id="about"
-        className={`w-full  py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="w-full mt-6 flex flex-col items-center justify-center">
 
        
           <motion.div
@@ -61,10 +62,14 @@ const About = () => {
         </p> */}
 
           
-            <h2 className={`${styles.sectionHeadText}`}>
-                Collaborate
-              with brands and agencies to create impactful results
+            <h2 className={`${styles.sectionHeadText} flex items-end gap-2`}>
+         OUR SERVICE
+         <span className="w-4 h-2  rounded-full bg-priRed"></span>
             </h2>
+            <p className="text-base text-neutral-400/60 mt-2">
+            Collaborate
+              with brands and agencies to create impactful results
+            </p>
           </motion.div>
 
           <motion.p
@@ -80,12 +85,16 @@ const About = () => {
           </motion.p>
         </div>
 
-        <div className="px-2 mt-8 md:mt-24 flex justify-center flex-wrap gap-10">
+        <div className="px-2 mt-8 md:my-16 flex justify-center flex-wrap gap-10">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
         </div>
+
+
       </div>
+      
+      <Experience />
     </>
   );
 };

@@ -8,6 +8,8 @@ import {
 
 } from "./components";
 import About from "./components/About";
+import Cta from "./components/Cta";
+import Works from "./components/Works";
 const App = () => {
   return (
     <>
@@ -19,6 +21,9 @@ const App = () => {
             <div>
               <Hero />
               <About />
+
+              <Works />
+              <Cta />
               {/* <StarsCanvas /> */}
             </div>
         

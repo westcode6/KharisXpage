@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { kCool } from "../assets/projects";
+import { cLogo } from "../constants";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  const logo = kCool
+  const logo = cLogo
   return (
-    <nav className={`p-${styles.paddingX} fixed top-0 bg-red-600 py-2 w-full z-10`}>
+    <nav className={`p-${styles.paddingX} fixed top-0 bg-priRed py-2 w-full z-10 rounded-b-2xl shadow-2xl`}>
       <div className="w-full glass-effect max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
@@ -22,9 +22,9 @@ const Navbar = () => {
           >
            {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
 
-           <img src={logo} alt="logoo" className="w-8 h-8 md:w-10 md:h-10 object-cover" />
+           <img src={logo} alt="logoo" className="w-10 h-10 md:w-10 md:h-10 object-cover" />
 
-           <h4 className="text-xl text-secRed font-black tracking-wide">haris</h4>
+           <h4 className="text-xl text-red-200 pl-1 font-black tracking-wide">haris</h4>
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`
-            "px-4 py-2 rounded-xl glass-effect hover:shadow-inner text-xs  font-medium text-orange-200 hover:font-black  cursor-pointer`}
+            "px-4 py-2 rounded-xl glass-effect hover:shadow-inner text-xs  font-medium text-red-200 hover:font-black  cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block uppercase px-4 py-2 border border-orange-400 bg-orange-50 transform transition hover:-translate-y-1 ease-in duration-100 font-bold text-red-500 text-sm hover:text-red-500 rounded-xl shadow-xl">
+          <button className="hidden sm:block uppercase px-4 py-2 border border-orange-400 bg-white transform transition hover:-translate-y-1 ease-in duration-100 font-bold text-priRed text-sm hover:text-red-500 rounded-xl shadow-xl">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""

@@ -9,11 +9,8 @@ import { styles } from "../styles";
 
 const ProjectCard = ({
   index,
-  name,
-  image,
   description,
-  tags,
-  source_code_link,
+  image,
 }) => {
   return (
     <div className="rounded-2xl shadow-2xl hover:shaow-inner">
@@ -25,36 +22,15 @@ const ProjectCard = ({
             speed: 450,
           }}
 
-          className="rounded-2xl bg-neutral-900 border-neutral-700 w-[250px] sm:w-[360px] md:p-4"
+          className="rounded-2xl glass-effect  shadow-2xl border-neutral-700 w-full sm:w-[320px] p-4"
         >
-          <div className="relative w-full h-[200px] rounded-xl overflow-hidden">
-            <img src={image} alt={name} className="w-full object-center rounded-2xl object-contain " />
-
-            <div className="hidden right-0 inset md:flex justify-end card-img-hover">
-              <div className="w-10 h-10 rounded-full text-lime-400 p-2 flex justify-center items-center cursor-pointer"
-              onClick={() => {
-                window.open(source_code_link)
-              }}
-              >
-                <img src="" alt="github" className="w-6 h-6 object-contain" />
-              </div>
-            </div>
+          <div className="relative w-full h-[250px] rounded-xl overflow-hidden">
+            <img src={image} alt={description} className="w-full object-center rounded-2xl object-cover" />
           </div>
 <span />
           <div className="p-2 rounded-xl">
-            <h3 className="text-white text-xl sm:text-2xl font-semibold">{name}</h3>
-            <p className="mt-2 text-sm sm:text-base text-neutral-400 font-medium">{description}</p>
-
-
-
-            <div className="w-full flex flex-wrap justify-between gap-4 mt-3">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-base font-medium ${tag.color}`}>#{tag.name}</p>
-            ))}
+            <h2 className="mt-2 text-2xl sm:text-base text-neutral-400 font-medium">{description}</h2>
           </div>
-          </div>
-
-          
         </Tilt>
       </motion.div>
     </div>
@@ -64,10 +40,13 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <div className={`border-t-2 border-green-400 rounded-2xl  p-2 sm:p-4`}>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Project.</h2>
+    <div className={`${styles.paddingX} bg-neutral-900 shadow-2xl rounded-2xl text-center p-2`}>
+      <motion.div variants={textVariant()} className="flex flex-col items-center">
+      <h2 className={`${styles.sectionHeadText} uppercase`}>
+        featured projects
+     
+            </h2>
+            <span className="w-4 h-2  block rounded-full bg-priRed"></span>
       </motion.div>
 
       <div className="w-full flex">
@@ -76,14 +55,11 @@ const Works = () => {
           className="mt-3 text-base text-neutral-400 max-w-3xl leading-[30px]"
         >
           Following projects showcase my skills and experience through real-work
-          examples of my work. Each project is briefly described with links to
-          code repository and live demos in it. it reflects my ability to solve
-          complex problems, work with different technologies and manage projects
-          effectively.
+          examples of my work. Each project is briefly described with links t
         </motion.p>
       </div>
 
-      <div className="w-full no-scrollbar overflow-auto mt-20 flex items-center gap-5">
+      <div className="w-full  mt-20 flex flex-wrap items-center justify-between gap-5">
         {projects.map((project, index) => (
            <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
