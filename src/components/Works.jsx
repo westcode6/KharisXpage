@@ -29,7 +29,7 @@ const ProjectCard = ({
           </div>
 <span />
           <div className="p-2 rounded-xl">
-            <h2 className="mt-2 text-2xl sm:text-base text-neutral-400 font-medium">{description}</h2>
+            <h2 className="mt-2 text-2xl sm:text-base text-gray-gradient font-medium">{description}</h2>
           </div>
         </Tilt>
       </motion.div>
@@ -40,8 +40,8 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <div className={`${styles.paddingX} bg-neutral-900 shadow-2xl rounded-2xl text-center p-2`}>
-      <motion.div variants={textVariant()} className="flex flex-col items-center">
+    <div className={`${styles.paddingX} bg-neutral-900 shadow-2xl rounded-2xl text-center flex flex-col items-center justify-center p-10`}>
+      <motion.div variants={textVariant()} className="flex flex-col items-center text-center">
       <h2 className={`${styles.sectionHeadText} uppercase`}>
         featured projects
      
@@ -49,7 +49,7 @@ const Works = () => {
             <span className="w-4 h-2  block rounded-full bg-priRed"></span>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="max-w-xl flex items-center justify-center py-4">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-base text-neutral-400 max-w-3xl leading-[30px]"

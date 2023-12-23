@@ -27,7 +27,7 @@ export const ServiceCard = ({ index, counts, title }) => {
         >
    
           <h4 className="text-3xl text-priRed font-black ">{counts}</h4>
-          <p className="mt-2 text-base tracking-wide text-neutral-400">{title}</p>
+          <p className="mt-2 text-base tracking-wide text-gray-gradient">{title}</p>
         </div>
       </motion.div>
     </Tilt>
@@ -56,7 +56,7 @@ const Experience = () => {
          08
       
             </h2>
-            <p className="text-lg text-[#FFF9E9] uppercase font-bold mt-2">
+            <p className="text-lg text-gray-gradient uppercase font-bold mt-2">
          Years Experience
             </p>
      </div>

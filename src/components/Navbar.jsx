@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const logo = cLogo
   return (
-    <nav className={`p-${styles.paddingX} fixed top-0 bg-priRed py-2 w-full z-10 rounded-b-2xl shadow-2xl`}>
+    <nav className={`p-${styles.paddingX} fixed top-0 bg-priRed py-2 w-full z-10  shadow-2xl`}>
       <div className="w-full glass-effect max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
@@ -24,7 +24,7 @@ const Navbar = () => {
 
            <img src={logo} alt="logoo" className="w-10 h-10 md:w-10 md:h-10 object-cover" />
 
-           <h4 className="text-xl text-red-200 pl-1 font-black tracking-wide">haris</h4>
+           <h4 className="text-3xl text-white pl-1 font-black tracking-wide">haris</h4>
           </Link>
         </div>
 

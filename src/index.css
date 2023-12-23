@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 html {
-  font-size: 0.98rem;
+  font-size: 1.2rem;
 }
 * {
   margin: 0;
@@ -86,10 +86,10 @@ img {
 /* GRADient TEXT */
 .text-gray-gradient {
   background: #fffdfd;
-  background: linear-gradient(to right, #999898 20%, #fc4a4a 48%);
+  background: linear-gradient(to right, rgb(255, 255, 255) 45%, #f0efefc2 45%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+  font-weight: 600;
   
 }
 

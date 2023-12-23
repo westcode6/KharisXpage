@@ -18,9 +18,9 @@ function Hero() {
 
 
 <div className="wrapper h-10 flex items-center">
-<h3 className='text-2xl text-gray-gradient font-mono'>Hello <span className='font-mono'>I'm </span> </h3>
-	<svg className='svg'>
-		<text x="50%" y="50%" dy=".35em" textAnchor="middle">
+<h3 className='text-2xl text-gray-gradient font-mono'>Hello <span className='font-mono'>I'm </span> Charis </h3>
+	<svg className='svg hidden'>
+		<text x="25%" y="50%" dy=".35em" textAnchor="middle">
 			Charis
 		</text>
 	</svg>
