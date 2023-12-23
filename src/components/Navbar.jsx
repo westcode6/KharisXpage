@@ -10,7 +10,7 @@ const Navbar = () => {
   const logo = cLogo
   return (
     <nav className={`p-${styles.paddingX} fixed top-0 bg-priRed py-2 w-full z-10  shadow-2xl`}>
-      <div className="w-full glass-effect max-w-7xl mx-auto flex items-center justify-between">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
             to="/"

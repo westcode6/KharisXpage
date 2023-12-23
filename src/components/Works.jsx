@@ -14,7 +14,8 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="rounded-2xl shadow-2xl hover:shaow-inner">
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <a href="/">
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
           options={{
             max: 45,
@@ -22,7 +23,7 @@ const ProjectCard = ({
             speed: 450,
           }}
 
-          className="rounded-2xl glass-effect  shadow-2xl border-neutral-700 w-full sm:w-[320px] p-4"
+          className="rounded-2xl glass-effect hover:shadow-2xl border-neutral-700 w-full sm:w-[320px] p-4"
         >
           <div className="relative w-full h-[250px] rounded-xl overflow-hidden">
             <img src={image} alt={description} className="w-full object-center rounded-2xl object-cover" />
@@ -33,6 +34,7 @@ const ProjectCard = ({
           </div>
         </Tilt>
       </motion.div>
+    </a>
     </div>
   );
 };
