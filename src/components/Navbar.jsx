@@ -22,9 +22,9 @@ const Navbar = () => {
           >
            {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
 
-           <img src={logo} alt="logoo" className="w-10 h-10 md:w-10 md:h-10 object-cover" />
+           <img src={logo} alt="logoo" className="w-6 h-6 md:w-10 md:h-10 object-cover" />
 
-           <h4 className="text-3xl text-white pl-1 font-black tracking-wide">haris</h4>
+           <h4 className="text-2xl text-white pl-1 font-black tracking-wide">haris</h4>
           </Link>
         </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Build */}
         <div className="lg:hidden flex flex-1 justify-end items-center ">
-          <div className=" flex items-center justify-end text-2xl h-16 glass-effect shadow-2xl live-yellow p-2  rounded-full">
+          <div className=" flex items-center justify-end text-2xl h-12 glass-effect shadow-2xl live-yellow p-2  rounded-full">
        
             {toggle ? <i className="fa fa-close"   onClick={() => {
                 setToggle(!toggle);
