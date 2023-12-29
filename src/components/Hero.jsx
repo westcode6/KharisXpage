@@ -1,7 +1,6 @@
 import React from 'react'
 import { styles } from '../styles'
 import { kharis} from '../constants'
-import { StarsCanvas } from './canvas'
 function Hero() {
 
   const profile = kharis
@@ -51,17 +50,14 @@ function Hero() {
          </div>
 
 
-        <div className='w-full md:max-w-1/2 hero-banner-img rounded-xl shadow'>
+        <div className='w-full md:max-w-1/2 mx-auto hero-banner-img rounded-xl shadow'>
           <div className='w-full h-[500px] hero-profile-banner bg-black  bg-opacity-80'>
-          {/* <img src={profile} className='w-full h-full object-contain' alt="profile" /> */}
+          <img src={profile} className='w-full h-full object-contain' alt="profile" />
           </div>
         </div>
       
       </div>
 
-<StarsCanvas />
-
-       
     </div>
 </>
 

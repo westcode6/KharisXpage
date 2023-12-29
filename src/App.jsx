@@ -21,11 +21,11 @@ const App = () => {
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
             <div>
-            <div className="w-full relative z-0">
+            <div className="w-full">
 
             <div className="relative z-0">
               <Hero />
-              <StarsCanvas />
+              {/* <StarsCanvas /> */}
             </div>
 
             </div>
@@ -34,7 +34,7 @@ const App = () => {
 
               <Works />
 
-              <div className="relative z-0">
+              <div className="w-full relative z-0">
               <Contact />
               <StarsCanvas />
             </div>
