@@ -21,7 +21,7 @@ function Hero() {
 
 
 <div className="w-full text-center sm:text-left">
-<div className='flex'>
+<div className='flex justify-center sm:justify-start'>
 <h3 className='text-xl  branded'>Hello <span className='font-mono'>I'm </span> Charis </h3>
 	<svg className='svg hidden'>
 		<text x="25%" y="50%" dy=".35em" textAnchor="middle">
@@ -59,7 +59,7 @@ function Hero() {
       
       </div>
 
-{/* <StarsCanvas /> */}
+<StarsCanvas />
 
        
     </div>

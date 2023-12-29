@@ -23,15 +23,21 @@ const App = () => {
             <div>
             <div className="w-full relative z-0">
 
-            <Hero />
-        <StarsCanvas />
+            <div className="relative z-0">
+              <Hero />
+              <StarsCanvas />
+            </div>
 
             </div>
 
               <About />
 
               <Works />
+
+              <div className="relative z-0">
               <Contact />
+              <StarsCanvas />
+            </div>
               <Cta />
             </div>
         
