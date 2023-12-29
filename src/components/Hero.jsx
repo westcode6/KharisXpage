@@ -1,13 +1,16 @@
 import React from 'react'
 import { styles } from '../styles'
 import { kharis} from '../constants'
+import { StarsCanvas } from './canvas'
 function Hero() {
 
   const profile = kharis
 
   return (
-    <div  className={`rounded-2xl overflow-hidden mt-20 md:mt-24 shadow w-full md:max-w-7xl mx-auto h-[110vh] md:max-h-[80vh]`}>
+<>   
 
+
+    <div  className={`rounded-2xl overflow-hidden mt-20 md:mt-24 shadow w-full md:max-w-7xl mx-auto h-[110vh] md:max-h-[80vh]`}>
       <div className={`${styles.paddingX} bg-black bg-opacity-50 w-full md:max-w-7xl mx-auto box  rounded-2xl shadow-2xl
        glass-effect flex flex-col md:flex-row justify-center md:justify-between items-center`}>
                
@@ -17,7 +20,7 @@ function Hero() {
 <div className=''>
 
 
-<div className="h-8 flex text-left">
+<div className="w-full text-center">
 <h3 className='text-xl  branded'>Hello <span className='font-mono'>I'm </span> Charis </h3>
 	<svg className='svg hidden'>
 		<text x="25%" y="50%" dy=".35em" textAnchor="middle">
@@ -25,8 +28,9 @@ function Hero() {
 		</text>
 	</svg>
   <span className='p-2 rounded-full glass-effect shadow-xl animate animate-bounce'>👀</span>
-</div>
   <h1 className='text-5xl sm:text-5xl mt-2'>VISUAL DESIGNER</h1>
+</div>
+
 </div>
         <p className='w-full md:max-w-lg  mt-6 text-xs md:text-lg text-neutral-500 tracking-tight leading-7'> And I know I can help your company create stunning visuals. As someone who has worked in marketing and graphic design for over a decade, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for marketing, I have the right background for your brand's needs. </p>
        <div className='w-full mt-10 flex flex-col md:flex-row items-center justify-start gap-6'>
@@ -52,8 +56,13 @@ function Hero() {
         </div>
       
       </div>
+
+{/* <StarsCanvas /> */}
+
        
     </div>
+</>
+
   )
 }
 

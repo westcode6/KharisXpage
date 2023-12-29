@@ -21,7 +21,7 @@ const App = () => {
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
             <div>
-            <div className="w-full relative">
+            <div className="w-full relative z-0">
 
             <Hero />
         <StarsCanvas />
