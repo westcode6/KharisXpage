@@ -21,6 +21,7 @@ function Hero() {
 
 
 <div className="w-full text-center sm:text-left">
+<div className='flex'>
 <h3 className='text-xl  branded'>Hello <span className='font-mono'>I'm </span> Charis </h3>
 	<svg className='svg hidden'>
 		<text x="25%" y="50%" dy=".35em" textAnchor="middle">
@@ -28,6 +29,7 @@ function Hero() {
 		</text>
 	</svg>
   <span className='p-2 rounded-full glass-effect shadow-xl animate animate-bounce'>👀</span>
+</div>
   <h1 className='text-5xl sm:text-5xl mt-2'>VISUAL DESIGNER</h1>
 </div>
 

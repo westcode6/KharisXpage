@@ -12,7 +12,7 @@ const Stars = (props) => {
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10
-    ref.current.rotation.y -= delta / 15
+    ref.current.rotation.y -= state / 15
   }) 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -24,6 +24,7 @@ const Stars = (props) => {
         size={0.002}
         sizeAttenuation={true}
         depthWrite={false}
+       
         />
       </Points>
     </group>
@@ -36,7 +37,7 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   return (
     <div className='w-screen h-screen absolute  inset-0 z-[-1]'>
-      <Canvas camera={{position: [0, 0, 1]}}>
+      <Canvas camera={{position: [0, 0, 1]}} >
       <Suspense  fallback={2}>
         <Stars />
       </Suspense>
