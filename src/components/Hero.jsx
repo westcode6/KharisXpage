@@ -9,7 +9,7 @@ function Hero() {
 <>   
 
 
-    <div  className={`rounded-2xl overflow-hidden mt-20 md:mt-24 shadow w-full md:max-w-7xl mx-auto h-[110vh] md:max-h-[80vh]`}>
+    <div  className={`rounded-2xl overflow-hidden mt-20 md:mt-24 shadow w-full md:max-w-7xl mx-auto  md:max-h-[80vh]`}>
       <div className={`${styles.paddingX} bg-black bg-opacity-50 w-full md:max-w-7xl mx-auto box  rounded-2xl shadow-2xl
        glass-effect flex flex-col md:flex-row justify-center md:justify-between items-center`}>
                
