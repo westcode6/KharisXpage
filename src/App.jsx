@@ -24,7 +24,7 @@ const App = () => {
             <div className="w-full relative">
 
             <Hero />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
 
             </div>
 

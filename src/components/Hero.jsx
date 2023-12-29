@@ -26,7 +26,7 @@ function Hero() {
 	</svg>
   <span className='p-2 rounded-full glass-effect shadow-xl animate animate-bounce'>👀</span>
 </div>
-  <h1 className='text-6xl sm:text-4xl mt-2'>VISUAL DESIGNER</h1>
+  <h1 className='text-5xl sm:text-5xl mt-2'>VISUAL DESIGNER</h1>
 </div>
         <p className='w-full md:max-w-sm  mt-6 text-xs md:text-lg text-neutral-500 tracking-tight leading-7'> And I know I can help your company create stunning visuals. As someone who has worked in marketing and graphic design for over a decade, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for marketing, I have the right background for your brand's needs. </p>
        <div className='w-full mt-10 flex flex-col md:flex-row items-center justify-start gap-6'>
