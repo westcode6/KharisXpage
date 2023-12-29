@@ -20,7 +20,7 @@ function Hero() {
 <div className=''>
 
 
-<div className="w-full text-center">
+<div className="w-full text-center sm:text-left">
 <h3 className='text-xl  branded'>Hello <span className='font-mono'>I'm </span> Charis </h3>
 	<svg className='svg hidden'>
 		<text x="25%" y="50%" dy=".35em" textAnchor="middle">
@@ -32,7 +32,7 @@ function Hero() {
 </div>
 
 </div>
-        <p className='w-full md:max-w-lg  mt-6 text-xs md:text-lg text-neutral-500 tracking-tight leading-7'> And I know I can help your company create stunning visuals. As someone who has worked in marketing and graphic design for over a decade, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for marketing, I have the right background for your brand's needs. </p>
+        <p className='w-full md:max-w-lg  mt-6 text-xs text-center sm:text-left md:text-lg text-neutral-500 tracking-tight leading-7'> And I know I can help your company create stunning visuals. As someone who has worked in marketing and graphic design for over a decade, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for marketing, I have the right background for your brand's needs. </p>
        <div className='w-full mt-10 flex flex-col md:flex-row items-center justify-start gap-6'>
        <button className='w-full md:w-fit bg-amber-500  text-base text-neutral-800 font-bold px-6 sm:px-12 py-4 rounded-tr-2xl rounded-bl-2xl uppercase'>About Me..</button>
 
