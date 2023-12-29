@@ -10,6 +10,8 @@ import {
 import About from "./components/About";
 import Cta from "./components/Cta";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
+import { StarsCanvas } from "./components/canvas";
 const App = () => {
   return (
     <>
@@ -19,12 +21,18 @@ const App = () => {
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
             <div>
-              <Hero />
+            <div className="w-full relative">
+
+            <Hero />
+        <StarsCanvas />
+
+            </div>
+
               <About />
 
               <Works />
+              <Contact />
               <Cta />
-              {/* <StarsCanvas /> */}
             </div>
         
           </div>

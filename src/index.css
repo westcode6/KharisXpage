@@ -49,12 +49,12 @@ img {
 
 /* THE CUSTOMS STYLES */
 
-.hero-banner {
+.hero-banner-img {
   background-image: url(/src/assets/projects/wavv.webp) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* max-height: 150px; */
+  max-height: fit-content;
 }
 
 .custom-btn {
@@ -75,7 +75,7 @@ img {
 
 .branded {
   background: #edde5d;
-  background: -webkit-linear-gradient(44deg, #edde5d 0%, #f09819 100%);
+  background: -webkit-linear-gradient(44deg, #f50a0a 0%, #ca2c17 100%);
 
   -webkit-backdrop-filter: blur(48px);
 

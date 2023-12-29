@@ -47,11 +47,11 @@ const About = () => {
         className={`w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
-        <div className="w-full mt-6 flex flex-col items-center justify-center">
+        <div className="w-full  flex flex-col items-center justify-center">
 
        
           <motion.div
-            className="w-full max-w-xl mx-auto flex flex-col items-center justify-center"
+            className="w-full max-w-xl mx-auto  mt-12 flex flex-col items-center justify-center"
             variants={slideIn("bottom", "", 0.23, 0.3)}
             // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
@@ -62,6 +62,8 @@ const About = () => {
         </p> */}
 
           
+
+          <h4 className="branded uppercase">What we are offering</h4>
             <h2 className={`${styles.sectionHeadText} flex items-end gap-2`}>
          OUR SERVICE
          <span className="w-4 h-2  rounded-full bg-priRed"></span>
@@ -89,12 +91,15 @@ const About = () => {
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
+
+
+      <Experience />
+
         </div>
 
 
       </div>
       
-      <Experience />
     </>
   );
 };

@@ -43,15 +43,14 @@ const Experience = () => {
         className={`w-full  py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
-        <div className="w-full flex flex-col sm:flex-row items-center justify-center">
+        <div className="w-full flex flex-col ">
 
        
           <motion.div
-            className="w-full md:max-w-1/2 flex items-center justify-start"
+            className="w-full flex flex-col items-center justify-start"
             variants={slideIn("bottom", "", 0.23, 0.3)}
    >
-      <div className="w-full md:max-w-20 flex flex-col items-center sm:items-start justify-center">
-     <div>
+   <div className="w-full flex flex-col mb-10">
      <h2 className={`text-5xl text-priRed font-black`}>
          08
       
@@ -59,15 +58,17 @@ const Experience = () => {
             <p className="text-lg text-gray-gradient uppercase font-bold mt-2">
          Years Experience
             </p>
-     </div>
       </div>
+
           </motion.div>
 
           <motion.div
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 w-full sm:max-w-1/2"
+            className="w-full "
           >
-        <div className="w-full px-2 grid grid-cols-1 sm:grid-cols-2  gap-2">
+
+
+        <div className="w-full px-2 flex flex-col  md:flex-row items-center justify-center space-x-4 gap-8">
           {experiences.map((experience, index) => (
             <ServiceCard key={experience.title} index={index} {...experience} />
           ))}
