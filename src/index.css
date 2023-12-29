@@ -51,6 +51,16 @@ img {
 
 .hero-banner-img {
   background-image: url(/src/assets/projects/wavv.webp) !important;
+  background-position: top, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: fit-content;
+}
+
+
+
+.hero-profile-banner {
+  background-image: url(/src/assets/projects/kharis.png) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +85,7 @@ img {
 
 .branded {
   background: #edde5d;
-  background: -webkit-linear-gradient(44deg, #f50a0a 0%, #ca2c17 100%);
+  background: -webkit-linear-gradient(44deg, #f3b304 0%, #e7270e 100%);
 
   -webkit-backdrop-filter: blur(48px);
 

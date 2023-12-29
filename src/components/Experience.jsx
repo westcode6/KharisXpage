@@ -26,7 +26,7 @@ export const ServiceCard = ({ index, counts, title }) => {
           className="w-full  shadow-xl bg-neutral-900 border border-neutral-800 px-6 py-4 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"
         >
    
-          <h4 className="text-3xl text-priRed font-black ">{counts}</h4>
+          <h4 className="text-3xl branded font-black ">{counts}</h4>
           <p className="mt-2 text-base tracking-wide text-gray-gradient">{title}</p>
         </div>
       </motion.div>
@@ -51,7 +51,7 @@ const Experience = () => {
             variants={slideIn("bottom", "", 0.23, 0.3)}
    >
    <div className="w-full flex flex-col mb-10">
-     <h2 className={`text-5xl text-priRed font-black`}>
+     <h2 className={`text-5xl branded font-black`}>
          08
       
             </h2>

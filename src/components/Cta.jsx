@@ -7,7 +7,7 @@ export default function Cta () {
   return (
    <>
    <div className={`${styles.padding} w-full md:max-w-6xl mx-auto  `}>
-            <div className='w-full bg-priRed rounded-b-full shadow-2xl border-4 border-red-600 py-5 flex items-center justify-center'>
+            <div className='w-full branded rounded-b-full shadow-2xl border-2 border-neutral-900 py-5 flex items-center justify-center'>
                     <div className='flex flex-col items-center justify-center text-center py-6'>
                         <div className='w-full text-red-400'>-----------------------------+++++++++++++--------------------------</div>
 
