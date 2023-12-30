@@ -1,6 +1,7 @@
 import React from 'react'
 import { styles } from '../styles'
 import { kharis} from '../constants'
+import { d0 } from '../assets/projects'
 function Hero() {
 
   const profile = kharis
@@ -17,7 +18,6 @@ function Hero() {
           <div className=''>
           <div className=''>
 <div className=''>
-
 
 <div className="w-full text-center sm:text-left">
 <div className='flex justify-center sm:justify-start'>
@@ -51,8 +51,8 @@ function Hero() {
 
 
         <div className='w-full md:max-w-1/2 mx-auto hero-banner-img rounded-xl shadow'>
-          <div className='w-full h-[500px] hero-profile-banner bg-black  bg-opacity-80'>
-          {/* <img src={profile} className='w-full h-full object-contain' alt="profile" /> */}
+          <div className='w-full h-[300px] bg-black  bg-opacity-80'>
+          <img src={d0} className='w-full h-full object-contain' alt="profile" />
           </div>
         </div>
       

@@ -17,7 +17,7 @@ import {
   d4,
   d5,
   d6,
-} from "../assets/projects";
+} from "../assets/projects/";
 
 
 export const navLinks = [

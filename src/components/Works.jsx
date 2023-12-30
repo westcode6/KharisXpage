@@ -13,7 +13,7 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <div className="rounded-2xl shadow-2xl hover:shaow-inner">
+    <div className="rounded-2xl shadow-2xl hover:shadow-inner">
     <a href="/">
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt

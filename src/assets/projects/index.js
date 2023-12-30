@@ -9,7 +9,7 @@ import brand2 from "./brand2.jpg";
 import brand3 from "./brand3.jpg";
 import brand4 from "./brand4.jpg";
 import brand5 from "./brand5.jpg";
-import d0 from "./d0.jpg";
+import d0 from "../projects/d0.jpg";
 import d1 from "./d1.jpg";
 import d2 from "./d2.jpg";
 import d3 from "./d3.jpg";
