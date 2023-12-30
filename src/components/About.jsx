@@ -39,12 +39,13 @@ export const ServiceCard = ({ index, title, icon, desc }) => {
 };
 
 const About = () => {
-
+  
   return (
     <>
       <div
-        id="about"
-        className={`w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        id={index}
+        
+        className={`card2 w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="w-full  flex flex-col items-center justify-center">
@@ -56,7 +57,7 @@ const About = () => {
             // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
           >
-            {/* <h2 className="bg-primary">Chech the color here</h2> */}
+            <h2 className="bg-primary">Chech the color here</h2>
             {/* <p className={`${styles.sectionSubText}`}>Introduction
 
         </p> */}
@@ -89,7 +90,10 @@ const About = () => {
 
         <div className="px-2 mt-8 md:my-16 flex justify-center flex-wrap gap-10">
           {services.map((service, index) => (
+            
             <ServiceCard key={service.title} index={index} {...service} />
+
+
           ))}
 
 

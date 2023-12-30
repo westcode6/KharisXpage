@@ -68,14 +68,14 @@ const Experience = () => {
           >
 
 
-        <div className="w-full px-2 flex flex-col  md:flex-row items-center justify-center space-x-4 gap-8">
+        <div className="w-full px-2 flex flex-col  md:flex-row items-center justify-center space-x-4 gap-7">
           {experiences.map((experience, index) => (
             <ServiceCard key={experience.title} index={index} {...experience} />
           ))}
         </div>
           </motion.div>
         </div>
-
+(src/components/Experience.jsx)
       </div>
     </>
   );
