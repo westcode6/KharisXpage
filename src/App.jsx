@@ -35,7 +35,7 @@ const App = () => {
               <Works />
 
               <div className="w-full relative z-0">
-              <Contact />
+              {/* <Contact /> */}
               {/* <StarsCanvas /> */}
             </div>
               <Cta />
