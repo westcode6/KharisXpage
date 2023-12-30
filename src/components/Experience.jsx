@@ -1,14 +1,12 @@
-
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { experiences} from "../constants";
+import { experiences } from "../constants";
 import { slideIn, fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 // Create The Service Card Component to render our services
 export const ServiceCard = ({ index, counts, title }) => {
-
   return (
     <Tilt className="w-full sm:w-[200px]  glass-effect rounded-xl">
       <motion.div
@@ -25,9 +23,10 @@ export const ServiceCard = ({ index, counts, title }) => {
           }}
           className="w-full  shadow-xl bg-neutral-900 border border-neutral-800 px-6 py-4 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"
         >
-   
-          <h4 className="text-3xl branded font-black ">{counts}</h4>
-          <p className="mt-2 text-base tracking-wide text-gray-gradient">{title}</p>
+          <h4 className="text-3xl font-black text-priRed">{counts}</h4>
+          <p className="mt-2 text-base tracking-wide text-gray-gradient">
+            {title}
+          </p>
         </div>
       </motion.div>
     </Tilt>
@@ -35,7 +34,6 @@ export const ServiceCard = ({ index, counts, title }) => {
 };
 
 const Experience = () => {
-
   return (
     <>
       <div
@@ -44,38 +42,31 @@ const Experience = () => {
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="w-full flex flex-col ">
-
-       
           <motion.div
             className="w-full flex flex-col items-center justify-start"
             variants={slideIn("bottom", "", 0.23, 0.3)}
-   >
-   <div className="w-full flex flex-col mb-10">
-     <h2 className={`text-5xl branded font-black`}>
-         08
-      
-            </h2>
-            <p className="text-lg text-gray-gradient uppercase font-bold mt-2">
-         Years Experience
-            </p>
-      </div>
-
-          </motion.div>
-
-          <motion.div
-            variants={fadeIn("", "", 0.1, 1)}
-            className="w-full "
           >
+            <div className="w-full flex flex-col mb-10">
+              <h2 className={`text-5xl text-priRed font-black`}>08</h2>
+              <p className="text-lg text-gray-gradient uppercase font-bold mt-2">
+                Years Experience
+              </p>
+            </div>
+          </motion.div>
 
-
-        <div className="w-full px-2 flex flex-col  md:flex-row items-center justify-center space-x-4 gap-7">
-          {experiences.map((experience, index) => (
-            <ServiceCard key={experience.title} index={index} {...experience} />
-          ))}
-        </div>
+          <motion.div variants={fadeIn("", "", 0.1, 1)} className="w-full ">
+            <div className="w-full px-2 flex flex-col  md:flex-row items-center justify-center space-x-4 gap-7">
+              {experiences.map((experience, index) => (
+                <ServiceCard
+                  key={experience.title}
+                  index={index}
+                  {...experience}
+                />
+              ))}
+            </div>
           </motion.div>
         </div>
-(src/components/Experience.jsx)
+    
       </div>
     </>
   );

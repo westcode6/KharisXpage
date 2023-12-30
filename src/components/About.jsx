@@ -23,22 +23,22 @@ export const ServiceCard = ({ index, title, icon, desc }) => {
             scale: 1,
             speed: 450,
           }}
-          className="w-full  shadow-xl border border-neutral-800 px-6 py-10 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"
+          className={` ${index === 1 ? "bg-priRed text-red-200  p-6 rounded-2xl" : "w-full  shadow-xl text-neutral-500 border border-neutral-800 px-6 py-10 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"} `}
         >
           <img
             src={icon}
             alt={title}
             className="w-16 h-16 object-contain object-center"
           />
-          <h4 className="text-gray-gradient text-base font-normal mt-2">{title}</h4>
-          <p className="mt-2 text-base tracking-tight text-neutral-400/60">{desc}</p>
+          <h4 className="text-xl font-bold mt-2">{title}</h4>
+          <p className={`${index == 1 ? "text-red-200 py-4" : "py-6 text-base tracking-tight"} text-neutral-400`}>{desc}</p>
         </div>
       </motion.div>
     </Tilt>
   );
 };
 
-const About = () => {
+const About = (index) => {
   
   return (
     <>
@@ -57,14 +57,14 @@ const About = () => {
             // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
           >
-            <h2 className="bg-primary">Chech the color here</h2>
+            {/* <h2 className="bg-primary">Chech the color here</h2> */}
             {/* <p className={`${styles.sectionSubText}`}>Introduction
 
         </p> */}
 
           
 
-          <h4 className="branded uppercase">What we are offering</h4>
+          <h4 className="text-priRed uppercase">What we are offering</h4>
             <h2 className={`${styles.sectionHeadText} flex items-end gap-2`}>
          OUR SERVICE
          <span className="w-4 h-2  rounded-full bg-priRed"></span>

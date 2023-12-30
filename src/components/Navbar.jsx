@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const logo = cLogo
   return (
-    <nav className={`p-${styles.paddingX} fixed top-0 bg-priRed py-2 w-full z-10  shadow-2xl`}>
+    <nav className={`p-${styles.paddingX} fixed top-0 bg-neutral-900 py-2 w-full z-10 `}>
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
@@ -24,7 +24,7 @@ const Navbar = () => {
 
            <img src={logo} alt="logoo" className="w-6 h-6 md:w-10 md:h-10 object-cover" />
 
-           <h4 className="text-2xl text-white pl-1 font-black tracking-wide">haris</h4>
+           <h4 className="text-2xl text-red-500 pl-1 font-black tracking-wide">haris</h4>
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`
-            "px-4 py-2 rounded-xl glass-effect hover:shadow-inner text-xs  font-medium text-red-200 hover:font-black  cursor-pointer`}
+            "px-4 py-2 rounded-xl glass-effect hover:shadow-inner text-xs  font-medium text-neutral-500 hover:font-black  cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 <a
                   href={`#${link.id}`}
-                  className="cursor-pointer p-1 rounded-2xl  font-mono  font-semibold"
+                  className="cursor-pointer p-1 rounded-2xl  font-mono text-sm font-semibold"
                 >
                   {link.title}
                   <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-70 animate-ping"></span>
@@ -50,14 +50,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block uppercase px-4 py-2 border border-orange-400 bg-white transform transition hover:-translate-y-1 ease-in duration-100 font-bold text-priRed text-sm hover:text-red-500 rounded-xl shadow-xl">
+          <button className="hidden sm:block uppercase px-4 py-2 border-4 border-amber-300 bg-amber-400 transform transition hover:-translate-y-1 ease-in duration-100 font-bold  text-sm hover:text-red-500 rounded-xl shadow-xl">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
-              className=""
+              className="text-neutral-900"
             >
       
               <span className="text-xl">
-                <i className="fa fa-glass  mr-1 " aria-hidden="true"></i>
+                <i className="fa fa-glass text-neutral-900 mr-1 " aria-hidden="true"></i>
               </span>
         TRY ME
             </a>
@@ -66,7 +66,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation Build */}
         <div className="lg:hidden flex flex-1 justify-end items-center ">
-          <div className=" flex items-center justify-end text-2xl h-12 glass-effect shadow-2xl live-yellow p-2  rounded-full">
+          <div className=" flex items-center justify-end text-2xl h-12
+           glass-effect shadow-2xl live-yellow p-2  rounded-full">
        
             {toggle ? <i className="fa fa-close"   onClick={() => {
                 setToggle(!toggle);
