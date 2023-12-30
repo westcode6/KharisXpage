@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 // The component in which the 3D model is being declared and used,  always returns a <primitive  /> tag. and inside of this tag will you declare the required attributes that consist of how your 3D model should appear... of which can differ from other 3D models.
 const Earth = () => {
   // The useGltf hook is used to hook up your 3D scene from its location.. and then passed into the object={} attribute of your <primitive object={earth.scene} /> tag
-  const earth = useGLTF("./public/planet/scene.gltf");
+  const earth  = useGLTF("/public/planet/scene.gltf")
   return <primitive object={earth.scene}
   scale={2.5}
   position-y={0}
