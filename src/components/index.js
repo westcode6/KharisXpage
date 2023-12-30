@@ -6,6 +6,8 @@ import Cta from './About';
 import Works from './Works';
 
 export {
+  EarthCanvas,
+  StarsCanvas,
   Navbar,
   Hero,
  About,
