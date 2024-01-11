@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import Stars from "./canvas/Stars";
+// import Stars from "./canvas/Stars";
 import { slideIn } from "../utils/motion";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 
 const Contact = () => {
   /* We'll be making use of the {email_Js  Service} to send automatic mails
@@ -148,12 +148,12 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
         </div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.23, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[450px]"
       >
         <EarthCanvas />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
