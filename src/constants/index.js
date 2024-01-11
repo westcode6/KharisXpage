@@ -1,24 +1,16 @@
 import {
   webUi,
-  mobile,
-  contentCreator,
   cLogo,
+  contentCreator,
+  mobile,
   kharis,
-
-  brand1,
-  brand2,
-  brand3,
-  brand4,
-  brand5,
-  d0,
-  d1,
-  d2,
-  d3,
-  d4,
-  d5,
-  d6,
-} from "../assets/projects/";
-
+  vid1,
+  vid6,
+  vid2,
+  vid3,
+  vid4,
+  vid5,
+} from "../../public/assets";
 
 export const navLinks = [
   {
@@ -137,76 +129,108 @@ const testimonials = [
   },
 ];
 
+const animations = [
+  {
+    video: vid1,
+    description: "JOLLI JUNE",
+  },
+
+  {
+    video: vid2,
+    description: "Jackie",
+  },
+
+  {
+    video: vid3,
+    description: "Insta Post",
+  },
+
+  {
+    video: vid4,
+    description: "Administ",
+  },
+
+  {
+    video: vid5,
+    description: "Father's day",
+  },
+
+  {
+    video: vid6,
+    description: "JOLLI JUNE",
+  },
+];
+
 const projects = [
- {
-  image: brand1,
-  description: "IKosh"
- },
+  {
+    image: "./assets/d4.jpg",
+    description: "Jackie",
+  },
 
- {
-  image: brand2,
-  description: "IKosh White"
- },
+  {
+    image: "./assets/d5.jpg",
+    description: "Insta Post",
+  },
 
- {
-  image: brand3,
-  description: "February"
- },
+  {
+    image: "./assets/d6.jpg",
+    description: "Administ",
+  },
 
+  {
+    image: "./assets/brand6.jpg",
+    description: "Father's day",
+  },
+  {
+    image: "./assets/d0.jpg",
+    description: "IKosh",
+  },
+  {
+    image: "./assets/d1.jpg",
+    description: "Precilla",
+  },
+  {
+    image: "./assets/brand1.jpg",
+    description: "IKosh",
+  },
 
- {
-  image: brand4,
-  description: "JOLLI JUNE"
- },
+  {
+    image: "./assets/brand2.jpg",
+    description: "IKosh White",
+  },
 
- {
-  image: brand5,
-  description: "Father's day"
- },
- {
-  image: d0,
-  description: "IKosh"
- },
- {
-  image: d1,
-  description: "Precilla"
- },
+  {
+    image: "./assets/brand3.jpg",
+    description: "February",
+  },
 
- {
-  image: d2,
-  description: "IKosh"
- },
+  {
+    image: "./assets/d3.jpg",
+    description: "IKosh",
+  },
 
-
- {
-  image: d3,
-  description: "Jackie"
- },
-
-
- {
-  image: d4,
-  description: "Insta Post"
- },
-
- {
-  image: d5,
-  description: "Administ"
- },
-
- {
-  image: d6,
-  description: "IKosh"
- },
-
+  {
+    image: "./assets/d7.jpg",
+    description: "IKosh",
+  },
 ];
 
 export {
+  webUi,
   cLogo,
   kharis,
+  contentCreator,
+  mobile,
   services,
   technologies,
   experiences,
   testimonials,
   projects,
+  animations,
+  vid1,
+  vid2,
+  vid3,
+  vid4,
+  vid5,
+  vid6,
 };

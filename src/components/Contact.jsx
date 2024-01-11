@@ -140,7 +140,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
             <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full sm:w-fit bg-orange-500 text-neutral-900  hover:bg-neutral-900  hover:text-green-400 py-3 px-8 outline-none  font-mono font-semibold uppercase tracking-wider shadow-md shadow-primary rounded-lg  transition hover:-translate-y-0.5 ease-in duration-100"
+              className="w-full sm:w-fit bg-red-500 text-neutral-100  hover:bg-neutral-900  hover:text-green-400 py-3 px-8 outline-none  font-mono font-semibold uppercase tracking-wider shadow-md shadow-primary rounded-lg  transition hover:-translate-y-0.5 ease-in duration-100"
             >
               {loading ? "Sending..." : "Send"}
             </button>

@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { cLogo } from "../constants";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  const logo = cLogo
   return (
     <nav className={`p-${styles.paddingX} fixed top-0 bg-neutral-900 py-2 w-full z-10 `}>
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
@@ -22,7 +20,7 @@ const Navbar = () => {
           >
            {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
 
-           <img src={logo} alt="logoo" className="w-6 h-6 md:w-10 md:h-10 object-cover" />
+           <img src="./assets/c-logo.png" alt="logoo" className="w-6 h-6 md:w-10 md:h-10 object-cover" />
 
            <h4 className="text-2xl text-red-500 pl-1 font-black tracking-wide">haris</h4>
           </Link>
