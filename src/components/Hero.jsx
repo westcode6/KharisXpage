@@ -18,34 +18,34 @@ function Hero() {
               <div className="">
                 <div className="">
                   <div className="w-full text-center sm:text-left">
-                    <div className="w-full h-12 flex items-start jusify-start relative">
-                      <h3 className="w-full text-xl font-mono text-neutral-500 sm:pl-10">
-                        Hello, I'm{" "}
+                
+                    <h1 className="text-5xl sm:text-5xl mt-2 font-mono">
+                      VISUAL DESIGNER
+                    </h1>
+
+                    <div className="w-full h-12 mt-4 flex items-start jusify-start relative">
+                      <h3 className="w-full text-xl font-mono text-neutral-500 sm:pl-20">
+                        Hello,  <span className="w-6 h-8 bg-amber-400 rounded-full absolute shadow-xl animate animate-bounce">
+                        👀
+                      </span> I'm{" "}
                         <span className="font-mono text-xl text-priRed font-black">
                           Charis{" "}
                         </span>{" "}
                       </h3>
-                      <span className="w-8 h-8 bg-amber-400 rounded-full absolute shadow-xl animate animate-bounce">
-                        👀
-                      </span>
+                     
                       <svg className="svg hidden">
                         <text x="25%" y="50%" dy=".35em" textAnchor="middle">
                           Charis
                         </text>
                       </svg>
                     </div>
-                    <h1 className="text-5xl sm:text-5xl mt-2 font-mono">
-                      VISUAL DESIGNER
-                    </h1>
                   </div>
                 </div>
                 <p className="w-full md:max-w-lg  mt-6 text-xs text-center sm:text-left md:text-lg text-neutral-500 tracking-wide leading-7">
                   {" "}
                   And I know I can help your company create stunning visuals. As
-                  someone who has worked iFn marketing and graphic design for
-                  over a decade. And, I know what brands need to capture their
-                  audiences' attention. With my powerful design skills and knack
-                  for marketing, I have the right background for your brand's
+                  someone who has worked iF marketing and video graphic design for
+                  over a decade. 
                   needs.
                   <span className="hidden"> </span>
                 </p>
