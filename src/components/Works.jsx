@@ -97,8 +97,8 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="w-full ">
-        <h2>Animated Designs</h2>
+      <div className="w-full  block text-left py-10">
+        <h2 className="text-2xl text-red-500 font-semibold">Animated Designs</h2>
         <div className="w-full  mt-20 lg:mt-10 flex flex-wrap gap-10">
           {animations.map((project, index) => (
             <VideoCard key={`project-${index}`} index={index} {...project} />
@@ -106,7 +106,19 @@ const Works = () => {
         </div>
       </div>
 
+
+      <div className="w-full  block text-left py-10">
+        <h2 className="text-2xl text-red-500 font-semibold">Graphics Designs</h2>
+        <div className="w-full  mt-20 lg:mt-10 flex flex-wrap gap-10">
+          {animations.map((project, index) => (
+            <VideoCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+      </div>
+
+
       <div className="w-full  mt-20 lg:mt-10 flex flex-wrap gap-10">
+
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

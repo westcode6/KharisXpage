@@ -10,7 +10,7 @@ import {
   vid3,
   vid4,
   vid5,
-} from "../../public/assets";
+} from "/public/assets/";
 
 export const navLinks = [
   {

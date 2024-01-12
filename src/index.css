@@ -50,7 +50,7 @@ img {
 /* THE CUSTOMS STYLES */
 
 .hero-banner-img {
-  background-image: url(/src/assets/projects/wavv.webp) !important;
+  background-image: url(/assets/wavv.webp) !important;
   background-position: top, center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ img {
 
 
 .hero-profile-banner {
-  background-image: url(/src/assets/projects/kharis.png) !important;
+  background-image: url(/assets/kharis.png) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
