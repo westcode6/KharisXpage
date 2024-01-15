@@ -60,7 +60,7 @@ img {
 
 
 .hero-profile-banner {
-  background-image: url(/assets/kharis.png) !important;
+  background-image: url(/src/assets/kharis.png) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
