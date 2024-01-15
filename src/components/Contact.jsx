@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-// import Stars from "./canvas/Stars";
+import Stars from "./canvas/Stars";
 import { slideIn } from "../utils/motion";
-// import { EarthCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 
 const Contact = () => {
   /* We'll be making use of the {email_Js  Service} to send automatic mails
@@ -89,7 +89,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
         className="flex-[0.75] glass-effect rounded-2xl"
       >
         <div className="py-8 md:p-4">
-          <p className={`${styles.sectionSubText} branded` }>Get in touch</p>
+          <p className={`${styles.sectionSubText}`}>Get in touch</p>
           <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
           <form ref={formRef} className="mt-12 flex flex-col gap-8">
@@ -140,7 +140,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
             <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full sm:w-fit bg-red-500 text-neutral-100  hover:bg-neutral-900  hover:text-green-400 py-3 px-8 outline-none  font-mono font-semibold uppercase tracking-wider shadow-md shadow-primary rounded-lg  transition hover:-translate-y-0.5 ease-in duration-100"
+              className="w-full sm:w-fit bg-amber-400 text-neutral-900  hover:bg-neutral-900  hover:text-green-400 py-3 px-8 outline-none  font-mono font-semibold uppercase tracking-wider shadow-md shadow-primary rounded-lg  transition hover:-translate-y-0.5 ease-in duration-100"
             >
               {loading ? "Sending..." : "Send"}
             </button>
@@ -148,12 +148,12 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
         </div>
       </motion.div>
 
-      {/* <motion.div
+      <motion.div
         variants={slideIn("right", "tween", 0.23, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[450px]"
       >
         <EarthCanvas />
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 };

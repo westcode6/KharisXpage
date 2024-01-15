@@ -1,30 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
-  "files.associations": { "*.scss": "postcss" },
-
   mode: "jit",
   theme: {
     extend: {
+      colors: {
+        primary: "#050816",
+        secondary: "#aaa6c3",
+        tertiary: "#151030",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
+      },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
         xs: "450px",
       },
-      colors: {
-        "priRed": "#D01418",
-          "secRed": "#E3CCAB",
-        
-      },
-      background: {
-          "dark": "#222327",
-          "darker": "#171717",
-          "darkest": "#222222",
-          
-      },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/heroMain.jpg')",
+        "hero-pattern": "url('/assets/herobg.png')",
       },
     },
   },

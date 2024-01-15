@@ -10,7 +10,21 @@ import {
   vid3,
   vid4,
   vid5,
-} from "/public/assets/";
+  d0,
+  d1,
+  d2,
+  d3,
+  d4,
+  d5,
+  d6,
+  d7,
+  d8,
+  d9,
+  d21,
+  d22,
+  d23,
+
+} from "/src/assets/"
 
 export const navLinks = [
   {
@@ -163,54 +177,62 @@ const animations = [
 
 const projects = [
   {
-    image: "./assets/d4.jpg",
+    image: d0,
     description: "Jackie",
   },
 
   {
-    image: "./assets/d5.jpg",
+    image: d1,
     description: "Insta Post",
   },
-
   {
-    image: "./assets/d6.jpg",
+    image: d2,
     description: "Administ",
   },
 
   {
-    image: "./assets/brand6.jpg",
+    image: d3,
+    description: "Administ",
+  },
+
+  {
+    image: d4,
     description: "Father's day",
   },
   {
-    image: "./assets/d0.jpg",
+    image: d5,
     description: "IKosh",
   },
   {
-    image: "./assets/d1.jpg",
+    image: d6,
     description: "Precilla",
   },
   {
-    image: "./assets/brand1.jpg",
+    image: d7,
     description: "IKosh",
   },
 
   {
-    image: "./assets/brand2.jpg",
+    image: d8,
     description: "IKosh White",
   },
 
   {
-    image: "./assets/brand3.jpg",
+    image: d9,
     description: "February",
   },
 
   {
-    image: "./assets/d3.jpg",
+    image: d21,
     description: "IKosh",
   },
 
   {
-    image: "./assets/d7.jpg",
+    image: d22,
+    description: "IKosh",
+  },
+  {
+    image: d23,
     description: "IKosh",
   },
 ];

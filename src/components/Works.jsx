@@ -75,16 +75,16 @@ const ProjectCard = ({ index, description, image }) => {
 const Works = () => {
   return (
     <div
-      className={`${styles.paddingX} bg-neutral-900 shadow-2xl rounded-2xl text-center flex flex-col items-center justify-center p-10`}
+      className={`${styles.paddingX} bg-[#121212] shadow-2xl rounded-2xl text-center flex flex-col items-center justify-center p-10`}
     >
       <motion.div
         variants={textVariant()}
         className="flex flex-col items-center text-center"
       >
-        <h2 className={`${styles.sectionHeadText} uppercase`}>
+        <h2 className={`${styles.sectionHeadText} uppercase text-white`}>
           featured projects
         </h2>
-        <span className="w-4 h-2  block rounded-full bg-priRed"></span>
+        <span className="w-4 h-2  block rounded-full bg-red-500"></span>
       </motion.div>
 
       <div className="max-w-xl flex items-center justify-center py-4">

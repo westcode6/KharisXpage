@@ -6,6 +6,7 @@ import { services } from "../constants";
 import { slideIn, fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import Experience from "./Experience";
+import { kharis } from "../constants";
 // Create The Service Card Component to render our services
 export const ServiceCard = ({ index, title, icon, desc }) => {
 
@@ -23,7 +24,7 @@ export const ServiceCard = ({ index, title, icon, desc }) => {
             scale: 1,
             speed: 450,
           }}
-          className={` ${index === 1 ? "bg-priRed text-red-200  p-6 rounded-2xl" : "w-full  shadow-xl text-neutral-500 border border-neutral-800 px-6 py-10 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"} `}
+          className={` ${index === 1 ? "bg-amber-500 text-neutral-900  p-6 rounded-2xl" : "w-full  shadow-xl text-neutral-500 border border-neutral-800 px-6 py-10 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"} `}
         >
           <img
             src={icon}
@@ -31,7 +32,7 @@ export const ServiceCard = ({ index, title, icon, desc }) => {
             className="w-16 h-16 object-contain object-center"
           />
           <h4 className="text-xl font-bold mt-2">{title}</h4>
-          <p className={`${index == 1 ? "text-red-200 py-4" : "py-6 text-base tracking-tight"} text-neutral-400`}>{desc}</p>
+          <p className={`${index == 1 ? "text-neutral-800 py-4" : "py-6 text-base tracking-tight"} text-neutral-400`}>{desc}</p>
         </div>
       </motion.div>
     </Tilt>
@@ -45,14 +46,22 @@ const About = (index) => {
       <div
         id={index}
         
-        className={`card2 w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full bg-[#121212] rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="w-full  flex flex-col items-center justify-center">
-
+        <div className="hero-banner-img sm:hidden w-full md:max-w-1/2  mx-auto rounded-xl shadow relative">
+            <div className="w-full bg-black bg-opacity-70">
+              <img
+                src={kharis}
+                className="w-full h-full object-cover object-center"
+                alt="profile"
+              />
+            </div>
+          </div>
        
           <motion.div
-            className="w-full max-w-xl mx-auto  mt-12 flex flex-col items-center justify-center"
+            className="w-full max-w-xl mx-auto flex flex-col items-center justify-center"
             variants={slideIn("bottom", "", 0.23, 0.3)}
             // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
@@ -61,10 +70,8 @@ const About = (index) => {
             {/* <p className={`${styles.sectionSubText}`}>Introduction
 
         </p> */}
-
-          
-
-          <h4 className="text-priRed uppercase">What we are offering</h4>
+    
+          <h4 className="branded uppercase">What we are offering</h4>
             <h2 className={`${styles.sectionHeadText} flex items-end gap-2`}>
          OUR SERVICE
          <span className="w-4 h-2  rounded-full bg-priRed"></span>

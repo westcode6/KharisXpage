@@ -7,7 +7,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`p-${styles.paddingX} fixed top-0 bg-neutral-900 py-2 w-full z-10 `}>
+    <nav
+      className={`p-${styles.paddingX} fixed top-0 bg-neutral-900 py-2 w-full z-10 `}
+    >
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
@@ -18,11 +20,17 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-           {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
+            {/* <p className="text-5xl text-red-500 font-mono font-black">k</p> */}
 
-           <img src="./assets/c-logo.png" alt="logoo" className="w-6 h-6 md:w-10 md:h-10 object-cover" />
+            <img
+              src="/src/assets/c-logo.png"
+              alt="logoo"
+              className="w-4 h-4 md:w-10 md:h-10 object-cover"
+            />
 
-           <h4 className="text-2xl text-red-500 pl-1 font-black tracking-wide">haris</h4>
+            <h4 className="text-base text-neutral-300 sm:text-2xl pl-0.5 font-black tracking-wide">
+              haris
+            </h4>
           </Link>
         </div>
 
@@ -37,7 +45,6 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-
                 <a
                   href={`#${link.id}`}
                   className="cursor-pointer p-1 rounded-2xl  font-mono text-sm font-semibold"
@@ -53,25 +60,38 @@ const Navbar = () => {
               href="https://api.whatsapp.com/send?phone=09065017306"
               className="text-neutral-900"
             >
-      
               <span className="text-xl">
-                <i className="fa fa-glass text-neutral-900 mr-1 " aria-hidden="true"></i>
+                <i
+                  className="fa fa-glass text-neutral-900 mr-1 "
+                  aria-hidden="true"
+                ></i>
               </span>
-        TRY ME
+              TRY ME
             </a>
           </button>
         </div>
 
         {/* Mobile Navigation Build */}
         <div className="lg:hidden flex flex-1 justify-end items-center ">
-          <div className=" flex items-center justify-end text-2xl h-12
-           glass-effect shadow-2xl live-yellow p-2  rounded-full">
-       
-            {toggle ? <i className="fa fa-close"   onClick={() => {
-                setToggle(!toggle);
-              }}></i> : <i className="fa fa-bars"   onClick={() => {
-                setToggle(!toggle);
-              }}></i>}
+          <div
+            className=" flex items-center justify-end text-2xl h-8
+           glass-effect shadow-2xl live-yellow   rounded-full"
+          >
+            {toggle ? (
+              <i
+                className="fa fa-close"
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+              ></i>
+            ) : (
+              <i
+                className="fa fa-bars text-lg"
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
+              ></i>
+            )}
           </div>
 
           <div
@@ -102,4 +122,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;

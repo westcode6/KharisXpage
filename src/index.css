@@ -50,7 +50,7 @@ img {
 /* THE CUSTOMS STYLES */
 
 .hero-banner-img {
-  background-image: url(/assets/wavv.webp) !important;
+  background-image: url(/src/assets/wavv.webp) !important;
   background-position: top, center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,8 +95,8 @@ img {
 
 /* GRADient TEXT */
 .text-gray-gradient {
-  background: #fffdfd;
-  background: linear-gradient(to right, rgb(255, 255, 255) 45%, #f0efefc2 45%);
+  background: #f14343;
+  background: linear-gradient(to right, rgb(245, 193, 21) 85%, #e45858c2 15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
@@ -107,7 +107,7 @@ img {
 
 .svg{
 	font-family: "Russo One", sans-serif;
-	width: 30%; height: 50%;
+	width: 10%; height: 50%;
 }
 .svg text {
 	animation: stroke 5s infinite alternate;
@@ -168,7 +168,7 @@ img {
 .box {
   /* font-size: 3vw; */
   margin: max(0rem, 0vw);
-  border: 1rem solid;
+  border: 0.4rem solid;
   padding: 3vw;
   border-radius: 10px;
   border-image: conic-gradient(

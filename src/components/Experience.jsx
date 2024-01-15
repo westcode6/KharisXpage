@@ -24,7 +24,7 @@ export const ServiceCard = ({ index, counts, title }) => {
           className="w-full  shadow-xl bg-neutral-900 border border-neutral-800 px-6 py-4 rounded-tl-2xl rounded-br-2xl rounded-md flex flex-col  items-center justify-center gap-2"
         >
           <h4 className="text-3xl font-black text-priRed">{counts}</h4>
-          <p className="mt-2 text-base tracking-wide text-gray-gradient">
+          <p className="mt-2 text-base tracking-wide branded">
             {title}
           </p>
         </div>
@@ -48,7 +48,7 @@ const Experience = () => {
           >
             <div className="w-full flex flex-col mb-10">
               <h2 className={`text-5xl text-priRed font-black`}>08</h2>
-              <p className="text-lg text-gray-gradient uppercase font-bold mt-2">
+              <p className="text-lg branded uppercase font-bold mt-2">
                 Years Experience
               </p>
             </div>
